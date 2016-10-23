@@ -14,9 +14,9 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/jinzhu/gorm"
-	"github.com/phonkee/signals"
 	"math"
+
+	"github.com/jinzhu/gorm"
 )
 
 /*
@@ -232,7 +232,6 @@ func (p *paginator) GetPerPage() int {
 func (p *paginator) GetNumPages() int {
 	return int(math.Ceil(float64(p.GetCount()) / float64(p.GetPerPage())))
 }
-
 
 func (p *paginator) PerPageParam(param string) Paginator {
 	p.perPageParam = strings.TrimSpace(param)
