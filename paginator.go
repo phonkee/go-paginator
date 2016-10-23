@@ -16,7 +16,7 @@ import (
 
 	"math"
 
-	"githug.com/phonkee/go-signals"
+	"github.com/phonkee/go-signals"
 	"github.com/jinzhu/gorm"
 )
 
